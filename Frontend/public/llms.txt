@@ -1,0 +1,29 @@
+# Underpure
+
+> Underpure is a luxury clothing and designer apparel brand offering high-end handcrafted garments, exclusive fashion collections, bras & intimates, and premium apparel.
+
+Underpure provides a curated shopping experience with free shipping options, loyalty rewards, custom size guides, and fast customer support. This site is optimized for both human users and AI agents assisting with shopping, product browsing, and store inquiries.
+
+## Key Collections & Pages
+
+- [Home Page](https://www.underpure.com/): Store homepage featuring new arrivals, featured campaigns, and curated collections.
+- [New Arrivals](https://www.underpure.com/collections/new-arrivals): Latest handcrafted luxury garments, seasonal dresses, and newly released fashion items.
+- [Clothing](https://www.underpure.com/collections/clothing): Premium designer apparel, formal wear, luxury pret, and everyday luxury pieces.
+- [Bras & Intimates](https://www.underpure.com/collections/bras): Premium handcrafted bras, luxury intimates, and supportive sets.
+- [Find Your Bra Size](https://www.underpure.com/bra-size): Interactive size calculator and fit guidance tool for accurate sizing.
+- [Size Guide](https://www.underpure.com/size-guide): Comprehensive sizing charts for clothing, dresses, and intimates.
+- [Sale](https://www.underpure.com/collections/sale): Special discounts, promotional luxury sets, and seasonal markdowns.
+
+## Customer Support & Store Policies
+
+- [About Us](https://www.underpure.com/about-us): Brand heritage, craftsmanship, and mission statement.
+- [Contact Us](https://www.underpure.com/contact-us): Customer support email, phone numbers, and inquiry forms.
+- [FAQs](https://www.underpure.com/faqs): Frequently asked questions regarding orders, shipping, payment methods, and returns.
+- [Returns & Exchanges](https://www.underpure.com/returns): Return policy, exchange guidelines, and return request submission portal.
+- [Loyalty Program](https://www.underpure.com/loyalty-program): Customer rewards, points breakdown, and exclusive member perks.
+- [Terms of Service](https://www.underpure.com/terms): Terms and conditions governing purchases and site usage.
+- [Privacy Policy](https://www.underpure.com/privacy): Data protection, privacy standards, and user rights.
+
+## Optional & Additional Documentation
+
+- [Full Site Information](https://www.underpure.com/llms-full.txt): Complete detailed documentation for AI agents, raw catalog endpoints, and full policies.

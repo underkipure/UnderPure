@@ -1,0 +1,21 @@
+# Dependencies
+**/node_modules/
+
+# Production builds
+**/dist/
+*.zip
+
+# Environment & local config files
+.env
+*.env
+*.env.local
+
+# Logs and cache
+*.log
+**/cache/*
+!**/cache/.gitkeep
+**/storage/logs/*
+
+# OS generated files
+.DS_Store
+Thumbs.db

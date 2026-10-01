@@ -1,0 +1,8 @@
+@layer components {
+  .btn-primary {
+    @apply bg-black text-white px-8 py-3 uppercase tracking-[0.1em] text-[13px] hover:bg-gray-800 transition-colors duration-300;
+  }
+  .btn-secondary {
+    @apply bg-transparent border border-black text-black px-8 py-3 uppercase tracking-[0.1em] text-[13px] hover:bg-black hover:text-white transition-colors duration-300;
+  }
+}

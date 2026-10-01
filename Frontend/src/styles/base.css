@@ -1,0 +1,39 @@
+@layer base {
+  html, body, #root {
+    overflow-x: clip;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    overscroll-behavior-x: none;
+    touch-action: pan-y;
+  }
+
+  @media (min-width: 1024px) {
+    html.checkout-fluid {
+      /* Pure Proportional Scaling for Desktop only */
+      /* 1.111vw makes 1rem = 16px at 1440px width */
+      /* Caps at 18px so it doesn't get massive on 4K screens */
+      font-size: min(1.111vw, 18px);
+    }
+  }
+
+  body {
+    @apply text-black bg-white antialiased;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.06rem;
+    line-height: 1.7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Dala Floda", serif;
+  }
+
+  img, video {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}

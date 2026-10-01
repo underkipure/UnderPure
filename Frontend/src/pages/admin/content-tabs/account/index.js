@@ -1,0 +1,12 @@
+export { default } from './AccountTab';
+export { default as AccountHeader } from './components/AccountHeader';
+export { default as AccountNavMenuEditor } from './components/AccountNavMenuEditor';
+export { default as AccountDashboardEditor } from './components/AccountDashboardEditor';
+export { default as AccountEmptyStatesEditor } from './components/AccountEmptyStatesEditor';
+export { default as AccountPersonalInfoEditor } from './components/AccountPersonalInfoEditor';
+export { default as AccountPasswordEditor } from './components/AccountPasswordEditor';
+export { default as AccountAddressBookEditor } from './components/AccountAddressBookEditor';
+export { default as AccountOrdersTableEditor } from './components/AccountOrdersTableEditor';
+export { default as AccountLogoutEditor } from './components/AccountLogoutEditor';
+export { default as AccountHeroExtrasEditor } from './components/AccountHeroExtrasEditor';
+export { default as AccountFooterLinksEditor } from './components/AccountFooterLinksEditor';

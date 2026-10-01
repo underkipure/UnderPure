@@ -1,0 +1,62 @@
+# Prevent Directory Browsing
+Options -Indexes
+
+# Deny Direct HTTP Access to Sensitive Files, Environment Configs, Cache, Logs, and DB Dumps
+<FilesMatch "^(\.env.*|\.git.*|.*\.cache|.*\.log|otp_log\.txt|.*\.sql|implementation\.md)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Forward Authorization header
+  RewriteCond %{HTTP:Authorization} ^(.*)
+  RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+  # Block Direct HTTP Access to Internal Directories
+  RewriteCond %{REQUEST_URI} (cache|storage|migrations|workers)/ [NC]
+  RewriteRule ^ - [F,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
+
+# Compress JSON API, JS, CSS, SVG, and Fonts Responses
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff2
+  AddOutputFilterByType DEFLATE font/woff
+</IfModule>
+
+# Leverage Browser Caching for Uploaded Images, Fonts, JS, and CSS
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  # Do not cache dynamic API JSON responses
+  ExpiresByType application/json "access plus 0 seconds"
+  # Cache static assets
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

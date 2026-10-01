@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Canonical URL for Google Search Indexing & Favicon Association -->
+  <link rel="canonical" href="https://www.underpure.com/" />
+
+  <!-- Favicons for Google Search & Browsers (Googlebot-Favicon 48x48+ specification) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="UnderPure" />
+  <meta name="application-name" content="UnderPure" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnderPure Official Store | Premium Luxury Clothing & Lingerie</title>
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Core Performance Preconnects -->
+  <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
+  <!-- Preload Local Fonts for Instant Text Rendering (Zero Layout Shift & Zero External Handshake) -->
+  <link rel="preload" href="/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/DalaFloda-Roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/DalaFloda-Italic.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Dynamic LCP Hero Banner Preload (Eliminates Duplicate Downloads & Adapts to Dynamic Settings) -->
+  <script>
+    (function () {
+      try {
+        var path = window.location.pathname;
+        if (path !== '/' && path !== '' && !path.endsWith('/index.html')) return;
+
+        var cached = localStorage.getItem('underpure_site_settings_cache');
+        if (!cached) return;
+
+        var heroUrl = '';
+        var mediaType = 'image';
+        try {
+          var parsed = JSON.parse(cached);
+          if (parsed && parsed.heroData) {
+            mediaType = parsed.heroData.mediaType || 'image';
+            heroUrl = parsed.heroData.mediaUrl || '';
+          }
+        } catch (err) { }
+
+        if (!heroUrl || mediaType === 'video' || heroUrl.match(/\.(mp4|webm|mov|ogg)$/i)) {
+          return;
+        }
+
+        var isMobile = window.innerWidth < 768;
+        var targetWidth = isMobile ? 1000 : 1800;
+        var finalUrl = heroUrl;
+
+        if (heroUrl.indexOf('cloudinary.com') !== -1) {
+          var transform = '/upload/f_auto,q_auto:best,dpr_auto,w_' + targetWidth + ',c_limit/';
+          if (heroUrl.indexOf('/upload/f_auto') !== -1 || heroUrl.indexOf('/upload/q_auto') !== -1 || heroUrl.indexOf('/upload/w_') !== -1) {
+            finalUrl = heroUrl.replace(/\/upload\/[^/]+\//, transform);
+          } else {
+            finalUrl = heroUrl.replace('/upload/', transform);
+          }
+        }
+
+        var link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = finalUrl;
+        link.fetchPriority = 'high';
+        link.setAttribute('fetchpriority', 'high');
+        document.head.appendChild(link);
+      } catch (e) { }
+    })();
+  </script>
+
+
+  <!-- Premium SEO Meta Tags -->
+  <!-- Meta Domain Verification (Replace with new code from your new Meta Business Account when ready): -->
+  <meta name="facebook-domain-verification" content="YOUR_NEW_META_VERIFICATION_CODE" />
+  <meta name="description"
+    content="Official UnderPure Store: Shop UnderPure online for premium luxury clothing, designer lingerie, handcrafted apparel, and everyday intimates with fast delivery." />
+  <meta name="keywords"
+    content="UnderPure, Underpure, Underpure online, UnderPure official, UnderPure store, UnderPure online store, UnderPure clothing, luxury clothing Pakistan" />
+  <meta name="author" content="UnderPure" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook / WhatsApp Previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="UnderPure Official Store" />
+  <meta property="og:url" content="https://www.underpure.com/" />
+  <meta property="og:title" content="UnderPure Official Store | Premium Luxury Clothing & Lingerie" />
+  <meta property="og:description"
+    content="Official UnderPure Store: Shop UnderPure online for premium luxury clothing, designer lingerie, handcrafted apparel, and everyday intimates." />
+  <meta property="og:image" content="https://www.underpure.com/logo.png" />
+  <meta property="og:image:secure_url" content="https://www.underpure.com/logo.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+
+  <!-- Facebook Catalog Product Tags -->
+  <meta property="product:brand" content="Underpure" />
+  <meta property="product:availability" content="in stock" />
+  <meta property="product:condition" content="new" />
+  <meta property="product:price:amount" content="0.00" />
+  <meta property="product:price:currency" content="PKR" />
+  <meta property="product:retailer_item_id" content="" />
+  <meta property="product:item_group_id" content="" />
+
+  <!-- Twitter Previews -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.underpure.com/" />
+  <meta name="twitter:title" content="UnderPure Official Store | Premium Luxury Clothing & Lingerie" />
+  <meta name="twitter:description"
+    content="Official UnderPure Store: Shop UnderPure online for premium luxury clothing, designer lingerie, handcrafted apparel, and everyday intimates." />
+  <meta name="twitter:image" content="https://www.underpure.com/logo.png" />
+  <meta name="twitter:image:src" content="https://www.underpure.com/logo.png" />
+
+  <!-- Deferred Non-blocking Meta Pixel Code -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        !function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+              n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1384887753575269');
+        fbq('track', 'PageView');
+      }, 5000);
+    });
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Structured Data for Google Sitelinks & Search Box -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.underpure.com/#organization",
+          "name": "UnderPure",
+          "legalName": "UnderPure Official",
+          "alternateName": [
+            "Underpure",
+            "Under Pure",
+            "Underpure online",
+            "Underpure Online",
+            "UnderPure Official Store",
+            "UnderPure Store"
+          ],
+          "url": "https://www.underpure.com/",
+          "sameAs": [
+            "https://www.instagram.com/underpure_official"
+          ],
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.underpure.com/logo.png",
+            "width": 512,
+            "height": 512
+          },
+          "image": "https://www.underpure.com/logo.png"
+        },
+        {
+          "@type": "Brand",
+          "@id": "https://www.underpure.com/#brand",
+          "name": "UnderPure",
+          "alternateName": ["Underpure", "Underpure online", "UnderPure Official"],
+          "url": "https://www.underpure.com/",
+          "logo": "https://www.underpure.com/logo.png"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.underpure.com/#website",
+          "url": "https://www.underpure.com/",
+          "name": "UnderPure",
+          "alternateName": ["Underpure", "Underpure Online", "UnderPure Official Website"],
+          "publisher": {
+            "@id": "https://www.underpure.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.underpure.com/collections/search?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "name": "Site Navigation",
+          "itemListElement": [
+            {
+              "@type": "SiteNavigationElement",
+              "position": 1,
+              "name": "New Arrivals",
+              "url": "https://www.underpure.com/collections/new-arrivals"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 2,
+              "name": "Sale",
+              "url": "https://www.underpure.com/collections/sale"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 3,
+              "name": "Bras",
+              "url": "https://www.underpure.com/collections/bras"
+            },
+            {
+              "@type": "SiteNavigationElement",
+              "position": 4,
+              "name": "Clothing",
+              "url": "https://www.underpure.com/collections/clothing"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  <!-- Alternate LLM Specification Link for AI Agents -->
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
+</head>
+
+<body>
+  <!-- Meta Pixel Code (noscript fallback) -->
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1384887753575269&ev=PageView&noscript=1" alt="" /></noscript>
+
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

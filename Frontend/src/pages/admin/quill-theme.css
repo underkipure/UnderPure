@@ -1,0 +1,21 @@
+/* Underpure ReactQuill Snow Theme Override */
+.ql-toolbar.ql-snow {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-bottom: none !important;
+  border-radius: 0 !important;
+  font-family: inherit !important;
+}
+.ql-container.ql-snow {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0 !important;
+  font-family: inherit !important;
+}
+.ql-editor {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 13.6px !important;
+  line-height: 1.7 !important;
+}
+.ql-editor.ql-blank::before {
+  font-style: normal !important;
+  color: #9ca3af !important;
+}

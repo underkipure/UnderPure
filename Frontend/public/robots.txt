@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /checkout/
+Disallow: /account/
+
+User-agent: Googlebot-Favicon
+Allow: /
+
+Sitemap: https://www.underpure.com/sitemap.xml

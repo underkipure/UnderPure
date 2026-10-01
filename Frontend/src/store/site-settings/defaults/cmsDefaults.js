@@ -1,0 +1,358 @@
+export const cmsDefaults = {
+  aboutUsData: {
+    heroQuote: '"Inspiring dressing up & undressing"',
+    heroParagraphs: [
+      'We are a luxury lingerie, ready-to-wear, and swim brand. Our name speaks to the unique duality of our spirit.',
+      'We take a fashion approach to lingerie, and apply a lingerie language to fashion. Our products are delicate and sophisticated, using luxury fabrics and bespoke embroideries crafted by world-class artisans.',
+      'We are constantly thinking about the emotion attached to lingerie, and our goal is to create products that make women of all ages and sizes feel their best.',
+    ],
+    heroImage: '',
+    fataleHashtag: '#underpure',
+    fataleImages: [
+      { id: 1, src: '', hasPlay: false },
+      { id: 2, src: '', hasPlay: false },
+      { id: 3, src: '', hasPlay: false },
+    ],
+    designPhilosophyLabel: 'DESIGN PHILOSOPHY',
+    designPhilosophyParagraphs: [
+      'Our ready-to-wear and swim collections embody this same spirit. Lingerie-inspired pieces are tastefully provocative, while maintaining bold style and practical wearability.',
+      'Our customer is comfortable embracing both her femininity and her confidence, knowing that these two qualities make her unstoppable.',
+    ],
+    philosophyImages: [
+      { id: 1, src: '' },
+      { id: 2, src: '' },
+      { id: 3, src: '' },
+      { id: 4, src: '' },
+    ],
+  },
+  faqHeroImage: '',
+  faqs: [
+    { id: 1, category: 'placing your order', question: 'Can I cancel or change my order?', answer: 'Orders can be cancelled within 1 hour of placement. After this window, orders enter processing and cannot be cancelled. Please contact customer service immediately if you need to cancel.' },
+    { id: 2, category: 'placing your order', question: 'What payment methods do you accept?', answer: 'We accept all major credit cards, PayPal, Apple Pay, and Afterpay.' },
+    { id: 3, category: 'order status', question: 'How long before my order is shipped?', answer: 'Standard orders typically ship within 1-2 business days. During peak periods, this may take slightly longer.' },
+    { id: 4, category: 'order status', question: 'How can I track my order?', answer: 'Once your order has shipped, you will receive a confirmation email with a tracking number. You can also track your order by logging into your account.' },
+    { id: 5, category: 'order status', question: 'An item is missing from my order, what should I do?', answer: 'Please contact us immediately at hello@underpure.com with your order number.' },
+    { id: 6, category: 'order status', question: "I've received a faulty or incorrect item with my order.", answer: 'We apologize for this inconvenience. Please contact customer service within 14 days of receipt with photos of the item.' },
+    { id: 7, category: 'shipping & delivery', question: 'How long does shipping take?', answer: 'Standard shipping takes 5-7 business days within Pakistan. Express shipping (2-3 business days) and overnight shipping options are also available at checkout.' },
+    { id: 8, category: 'shipping & delivery', question: 'Is free shipping available?', answer: 'Yes! We offer complimentary standard shipping on all Pakistan orders over Rs. 5000. Express and overnight shipping upgrades are available for an additional fee.' },
+    { id: 9, category: 'shipping & delivery', question: 'Do you ship internationally?', answer: 'Yes, we ship to over 50 countries worldwide. International shipping typically takes 7-14 business days.' },
+    { id: 10, category: 'returns', question: 'What is your return policy?', answer: 'We accept returns within 30 days of delivery for unworn items in original condition with tags attached. Intimates and final sale items are non-returnable for hygiene reasons.' },
+    { id: 11, category: 'returns', question: 'How do I start a return or exchange?', answer: 'Visit our Returns Center to initiate a return or exchange. You will receive a prepaid return label via email.' },
+    { id: 12, category: 'refunds', question: 'How long does it take to process a refund?', answer: 'Once we receive your return, please allow 5-7 business days for inspection and processing. Refunds will be issued to the original payment method.' },
+    { id: 13, category: 'route insurance', question: 'What does Route cover?', answer: 'Route covers lost, stolen, and damaged packages. We highly recommend adding Route at checkout to protect your order.' },
+    { id: 14, category: 'product details & fit', question: 'How do I find my correct size?', answer: 'We recommend using our Size Guide available on every product page. For bras, you can also use our "Find Your Bra Size" tool.' },
+    { id: 16, category: 'UnderPure boutiques', question: 'Do you have physical stores?', answer: 'Yes! Visit us at our boutiques or check our Boutiques page for store locations and hours.' },
+  ],
+  cookieDeclarationData: {
+    title: "Cookie Declaration",
+    metaText: "Date generated by System: " + new Date().toLocaleString(),
+    introText: "We use cookies to optimize website functionality, analyze the performance, and provide personalized experience to you. Some cookies are essential to make the website operate and function correctly. Those cookies cannot be disabled. In this window you can manage your preference of cookies.",
+    sections: [
+      {
+        heading: "Strictly necessary cookies",
+        description: "These cookies are essential in order to enable you to move around the website and use its features, such as accessing secure areas of the website. The website cannot function properly without these cookies.",
+        cookies: [
+          { name: "localization", domain: "underpure.com", retention: "1 years", type: "First-party (Cookie)", provider: "System", purpose: "Used to localize the cart to the correct country." },
+          { name: "cart_currency", domain: "underpure.com", retention: "2 week(s)", type: "First-party (Cookie)", provider: "System", purpose: "Used after a checkout is completed to initialize a new empty cart with the same currency as the one just used." },
+          { name: "cart", domain: "underpure.com", retention: "1 months", type: "First-party (Cookie)", provider: "System", purpose: "Contains information related to the user's cart." }
+        ]
+      }
+    ]
+  },
+  doNotSellData: {
+    heading: '',
+    content: ''
+  },
+  careersData: {
+    enabledInFooter: true,
+    title: "join the underpure team",
+    bottomText: "We're always looking for amazing, hard working, talented people to join our team. For general inquiries, please send your resume and portfolio to careers@underpure.com",
+    departments: [
+      {
+        name: "MARKETING & E-COMMERCE",
+        jobs: [
+          { title: "Retention Marketing Manager" },
+          { title: "Ecommerce Product Coordinator" }
+        ]
+      },
+      {
+        name: "PRODUCTION",
+        jobs: [
+          { title: "Sample & Technical Design Assistant" }
+        ]
+      },
+      {
+        name: "RETAIL",
+        jobs: [
+          { title: "Boutique Manager" }
+        ]
+      },
+      {
+        name: "INTERNSHIPS",
+        jobs: [
+          { title: "Social Media / Marketing Intern" },
+          { title: "Creative Intern" },
+          { title: "Graphic Design Intern" },
+          { title: "PR Intern" },
+          { title: "Design Intern" }
+        ]
+      }
+    ]
+  },
+  customPages: [
+    { 
+      id: 1, 
+      title: 'Privacy Policy', 
+      slug: 'privacy-policy', 
+      content: '<h3>Information We Collect</h3><p style="text-transform: lowercase;">we collect information from you when you register on the site, place an order, enter a contest or sweepstakes, respond to a survey or communication such as e-mail, or participate in another site feature. when ordering or registering, we may ask you for your name, e-mail address, mailing address, phone number, credit card information or other information. you may, however, visit our site anonymously.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>How We Use Your Information</h3><p style="text-transform: lowercase;">we may use the information we collect from you when you register, purchase products, enter a contest or promotion, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways: to personalize your site experience and to allow us to deliver the type of content and product offerings in which you are most interested. to allow us to better service you in responding to your customer service requests. to quickly process your transactions.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Security</h3><p style="text-transform: lowercase;">we implement a variety of security measures to maintain the safety of your personal information. your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. when you place orders or access your personal information, we offer the use of a secure server.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Cookies</h3><p style="text-transform: lowercase;">we use cookies to help us remember and process the items in your shopping cart. they are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. we also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.</p>', 
+      isPublished: true 
+    },
+    { 
+      id: 2, 
+      title: 'Terms of Service', 
+      slug: 'terms-of-service', 
+      content: '<h3>Use of site</h3><p style="text-transform: lowercase;">thank you for visiting our web site. your use of this site is governed by the following terms of use, rules or guidelines. these terms govern your access and use of this web site and online store at www.underpure.com. in using this site or purchasing products on this site, you are bound to these terms. if you do not agree to comply with these terms, you must exit this site and cease access, use, and purchase activity.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Product use & purchase of product</h3><p style="text-transform: lowercase;">the materials contained on this site are to be used solely for private, personal and non-commercial purposes. you are prohibited from reselling any merchandise secured through this site, and are prohibited from making commercial or otherwise non-personal use of this site and any of its contents. product descriptions and photos are for informational purposes only. product styles, designs and colors shown on the site may be subject to change without notice. we cannot guarantee product availability for all products at any given time. product availability is understood at the time when you are emailed a shipping confirmation. underpure reserves the right to revise orders, reject current and future orders on our site, and limit order quantities in our sole discretion.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Submissions</h3><p style="text-transform: lowercase;">any information or materials (messages, postings, ideas or suggestions) submitted to underpure will become, upon your submission, the exclusive property of underpure. underpure will have an unlimited, non-exclusive, royalty-free, perpetual, irrevocable and sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute and display such materials throughout the world in any media. you represent and warrant that you own or otherwise control all of the rights to the materials that you submit.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Copyright, trademark & intellectual property</h3><p style="text-transform: lowercase;">this site as a whole, and images and materials on this site, are proprietary to underpure and are protected by copyright, trademark and other intellectual property rights. the unauthorized use of any content or materials on this site is expressly prohibited and may violate copyright, trademark and intellectual property laws. you may not use or reproduce any trademarks, service or trade names, or site materials or content, without prior written and express authorization from underpure.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Disclaimer</h3><p style="text-transform: lowercase;">this site, its use and contents are provided on an as is basis, without representations or warranties of any kind, express or implied. underpure makes no representations or warranties about the accuracy or completeness of information in this site, the condition, features or availability of products advertised or offered, fitness for a particular purpose, implied warranties arising out of course of use, or freedom from computer viruses. product descriptions, text, graphics and links may not be complete, current or accurate. underpure is not responsible for your reliance on information obtained through this site. you agree by using this site that your use of site is at your risk and underpure is not responsible or liable for any damages of any kind whatsoever arising out of, caused by, or relating to your use of this site. you assume full responsibility for all loss or use, loss of data and costs associated with necessary repairs or hardware or equipment used in connection with this site. you assume full responsibility for evaluating the information and content provided on this site. all such information is subject to change at any time without prior or subsequent notice.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Limitation of liability</h3><p style="text-transform: lowercase;">in no event shall underpure, its employees or agents be liable to you for any direct, indirect, actual, incidental, special, punitive or consequential damages, or any other damages whatsoever, arising out of or in connection with the purchase or use, or performance of, the information, products or materials on this site. given certain jurisdictions, some or all of the foregoing limitations may be inapplicable or unenforceable and thus may not apply to you.</p><hr style="margin: 2rem 0; border-color: #eaeaea;" /><h3>Indemnification</h3><p style="text-transform: lowercase;">you agree to defend, indemnify and hold harmless underpure, its affiliates, directors, officers, employees, suppliers, agents, third party partners and subcontractors from and against any and all claims.</p>', 
+      isPublished: true 
+    }
+  ],
+  contactUsData: {
+    clientServices: {
+      title: 'client services',
+      introText: "UnderPure's Client Services team would be happy to assist you with your online order. Contact us for fit and style advice, delivery inquiries and returns or exchanges. We'll even help you pick out that perfect gift.",
+      hoursText: 'UnderPure Client Services representatives are available Monday through Friday, 10AM-6PM EST.',
+      chatText: 'See Chat icon in lower right hand corner',
+      email: 'hello@underpure.com',
+      phone: '+92 300 0000000'
+    },
+    stores: [
+      {
+        id: 1,
+        name: 'Nolita Boutique',
+        addressLine1: '372 Broome Street',
+        addressLine2: 'New York, NY 10013',
+        phone: '+1 (917) 237-0008',
+        hours: 'Monday-Saturday 11AM-\n7PM EST, Sunday 12PM-6PM EST',
+        image: ''
+      },
+      {
+        id: 2,
+        name: 'West Hollywood Boutique',
+        addressLine1: '519 N. Almont Drive',
+        addressLine2: 'West Hollywood, CA 90069',
+        phone: '+1 (424) 302-0056',
+        hours: 'Monday-Saturday 11AM-\n7PM PST, Sunday 12PM-6PM PST',
+        image: ''
+      }
+    ],
+    otherInquiries: {
+      title: 'other inquiries',
+      socialText: 'Share what you love. Love what you share:',
+      socialHandle: '@underpurenyc',
+      socialUrl: 'https://instagram.com/underpurenyc',
+      generalEmail: 'hello@underpure.com',
+      pressEmail: 'press@underpure.com',
+      wholesaleEmail: 'wholesale@underpure.com',
+      marketingEmail: 'press@underpure.com'
+    }
+  },
+  privacyPolicyData: {
+    heading: 'privacy policy',
+    lastUpdated: 'LAST UPDATED: SEPTEMBER 26, 2023',
+    introParagraphs: [
+      'UnderPure values its customers and respects your privacy, and wants you to be familiar with how we collect, use and disclose information. This Privacy Policy describes our practices in connection with information that we collect through our websites and mobile software applications operated by or on behalf of UnderPure, including the website located at https://www.underpure.com.',
+      'We encourage you to read this Privacy Policy before using the UnderPure Online Properties. By using the UnderPure Online Properties, you understand that we will collect, use and disclose your information in accordance with this Privacy Policy.'
+    ],
+    sections: [
+      {
+        title: 'UPDATES TO THIS POLICY',
+        paragraphs: [
+          'We may change this Privacy Policy at any time. Please take a look at the "Last Updated" legend at the top of this page to see when this Privacy Policy was last revised. Any changes to this Privacy Policy will become effective on the "Last Updated" date indicated above.'
+        ],
+        bullets: [],
+        afterBulletParagraphs: []
+      },
+      {
+        title: 'PERSONAL INFORMATION',
+        paragraphs: [],
+        bullets: [],
+        afterBulletParagraphs: []
+      },
+      {
+        title: 'PERSONAL INFORMATION WE COLLECT',
+        paragraphs: [
+          'We collect two types of information: Personal Information and Other Information. "Personal Information" is information that relates to you as an identifiable specific individual. We and our service providers may collect the following Personal Information:'
+        ],
+        bullets: [
+          'Name',
+          'Postal address (including billing and shipping addresses)',
+          'Telephone number',
+          'Email address',
+          'Credit and debit card number.'
+        ],
+        afterBulletParagraphs: [
+          'IF YOU SUBMIT ANY PERSONAL INFORMATION RELATING TO ANYONE OTHER THAN YOURSELF, YOU REPRESENT THAT YOU HAVE OBTAINED ANY NECESSARY CONSENT FROM THAT INDIVIDUAL FOR USE AND DISCLOSURE OF THAT INDIVIDUAL\'S PERSONAL INFORMATION AS DESCRIBED IN THIS PRIVACY POLICY.'
+        ]
+      },
+      {
+        title: 'HOW WE COLLECT PERSONAL INFORMATION',
+        paragraphs: [
+          'We collect Personal Information from a number of sources. While we collect Personal Information from you directly, we can also use third-party sources of information in order to fulfill the purposes set out in this Privacy Policy. These sources can include:'
+        ],
+        bullets: [
+          'Financial institutions (e.g., your credit card company or your bank)',
+          'Services providers',
+          'Marketing partners',
+          'Marketing and advertising agencies and networks',
+          'Previous employers (if you are applying for a job with us)',
+          'Background screening companies (if you are applying for a job with us)'
+        ],
+        afterBulletParagraphs: []
+      },
+      {
+        title: 'HOW WE USE PERSONAL INFORMATION',
+        paragraphs: [
+          'Depending on the purpose, we may use various categories of information in order to achieve the effects you and we expect. To that end, we may use Personal Information about you:'
+        ],
+        bullets: [
+          'To respond to your inquiries and fulfill your requests, including to contact you if necessary',
+          'To process and fulfill your order, for example by confirming your order and your billing and shipping information, processing your payments, delivering your products and communicating with you regarding your order',
+          'To send you important information regarding the UnderPure Online Properties, changes to our terms, conditions and policies and other administrative information',
+          'To send you information by email, postal mail, telephone and other means about our products, services, and other promotions',
+          'To help us improve the customer experience, including by learning more about your preferences to help personalize your experience with us',
+          'To analyze trends and statistics in connection with our businesses and Internet properties',
+          'To protect the security or integrity of our businesses and Internet properties'
+        ],
+        afterBulletParagraphs: []
+      },
+      {
+        title: 'HOW PERSONAL INFORMATION IS DISCLOSED',
+        paragraphs: [
+          'Similarly to how we use Personal Information, we may disclose Personal Information to service providers, and sometimes third parties, for various purposes. To this end, we may disclose Your Personal Information to the following entities for the purposes associated with each entity as noted below:'
+        ],
+        bullets: [
+          'To our third-party service providers, who provide services such as website hosting, data storage, data analysis, payment processing, order fulfillment, information technology and related infrastructure provision, customer service, email delivery, auditing and other services'
+        ],
+        afterBulletParagraphs: []
+      }
+    ]
+  },
+  termsOfServiceData: {
+    heading: 'Terms of Service',
+    sections: [
+      {
+        title: 'Use of site',
+        paragraphs: [
+          'Thank you for visiting our web site. Your use of this site is governed by the following terms of use, rules or guidelines. These terms govern your access and use of this web site and online store at www.underpure.com. In using this site or purchasing products on this site, you are bound to these terms. If you do not agree to comply with these terms, you must exit this site and cease access, use, and purchase activity.'
+        ]
+      },
+      {
+        title: 'Product use & purchase of product',
+        paragraphs: [
+          'The materials contained on this site are to be used solely for private, personal and non-commercial purposes. You are prohibited from reselling any merchandise secured through this site, and are prohibited from making commercial or otherwise non-personal use of this site and any of its contents. Product descriptions and photos are for informational purposes only. Product styles, designs and colors shown on the site may be subject to change without notice.',
+          'We cannot guarantee product availability for all products at any given time. Product availability is understood at the time when you are emailed a shipping confirmation. UnderPure reserves the right to revise orders, reject current and future orders on our site, and limit order quantities in our sole discretion.'
+        ]
+      },
+      {
+        title: 'Submissions',
+        paragraphs: [
+          'Any information or materials (messages, postings, ideas or suggestions) submitted to UnderPure will become, upon your submission, the exclusive property of UnderPure. UnderPure will have an unlimited, non-exclusive, royalty-free, perpetual, irrevocable and sublicensable right to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute and display such materials throughout the world in any media. You represent and warrant that you own or otherwise control all of the rights to the materials that you submit.'
+        ]
+      },
+      {
+        title: 'Copyright, trademark & intellectual property',
+        paragraphs: [
+          'This site as a whole, and images and materials on this site, are proprietary to UnderPure and are protected by copyright, trademark and other intellectual property rights. The unauthorized use of any content or materials on this site is expressly prohibited and may violate copyright, trademark and intellectual property laws. You may not use or reproduce any trademarks, service or trade names, or site materials or content, without prior written and express authorization from UnderPure.'
+        ]
+      },
+      {
+        title: 'Disclaimer',
+        paragraphs: [
+          'This Site, its use and contents are provided on an as is basis, without representations or warranties of any kind, express or implied. UnderPure makes no representations or warranties about the accuracy or completeness of information in this Site, the condition, features or availability of products described or offered, fitness for a particular purpose, implied warranties arising out of course of use, or freedom from computer viruses. Product descriptions, text, graphics and links may not be complete, current or accurate. UnderPure is not responsible for your reliance on information obtained through this site. You agree by using this site that your use of Site is at sole risk and UnderPure is not responsible or liable for any damages of any kind whatsoever arising out of, caused by, or relating to your use of this Site. You assume full responsibility for all lose of use, loss of data and costs associated with necessary repairs or hardware or equipment used in connection with this site. You assume full responsibility for evaluating the information and content provided on this site. All such information is subject to change at any time without prior or subsequent notice.'
+        ]
+      },
+      {
+        title: 'Limitation of liability',
+        paragraphs: [
+          'In no event shall UnderPure, its Employees or Agents be liable to you for any direct, indirect, actual, incidental, special, punitive or consequential damages, or any other damages whatsoever, arising out of or in connection with the purchase or use, or performance of, the information, products or materials on the site. Given certain jurisdictions, some or all of the foregoing limitations may be inapplicable or unenforceable and thus may not apply to you.'
+        ]
+      },
+      {
+        title: 'Indemnification',
+        paragraphs: [
+          'You agree to defend, indemnify and hold harmless UnderPure, its Affiliates, Directors, Officers, Employees, Supplies, Agents, Third Party Partners and Shareholders from and against any and all claims.'
+        ]
+      }
+    ]
+  },
+  affiliatesData: {
+    heading: 'become an affiliate',
+    enabledInFooter: true,
+    enabledInGetHelp: true,
+    columns: [
+      {
+        title: 'CREATOR AFFILIATES',
+        paragraphs: [
+          'UnderPure is looking to connect with elevated creators that are focused on fashion, styling and trends.',
+          'Build shoppable lists and share links to earn commission on every purchase. UnderPure offers 15% commission off of any direct sales & unique discount codes up to 10% to share with your audience.',
+          "Use UnderPure's code, UNDERPURE-2025 when you sign up below."
+        ],
+        buttons: [
+          { text: 'SIGN UP ON SHOPMY', url: 'https://shopmy.us' }
+        ]
+      },
+      {
+        title: 'PUBLISHING AFFILIATES',
+        paragraphs: [
+          'UnderPure is looking for fashion-forward websites to join the UnderPure affiliate program.',
+          'As a member of the program, you will earn a commission when visitors referred by you make a purchase on underpure.com',
+          'Signup for approval via Rakuten Advertising below:'
+        ],
+        buttons: [
+          { text: 'CONNECT ON RAKUTEN', url: 'https://rakutenadvertising.com' },
+          { text: 'SIGN UP ON RAKUTEN', url: 'https://rakutenadvertising.com' }
+        ]
+      }
+    ]
+  },
+  customerDataRequests: {
+    heading: 'Customer Data Requests',
+    sections: [
+      {
+        title: 'Data portability',
+        description: 'You have the right to request access to your data at any time.',
+        buttonText: 'Request export'
+      },
+      {
+        title: 'Data Rectification',
+        description: 'You have the right to request your data to be updated whenever you think it is appropriate.',
+        buttonText: 'Request an update'
+      },
+      {
+        title: 'Right to be forgotten',
+        description: 'You have the right to ask all your data to be erased. After that, you will no longer be able to access your account.',
+        buttonText: 'Request personal data deletion'
+      }
+    ]
+  },
+  returnsData: {
+    bannerImage: '',
+    introText: "UnderPure will accept returns on unworn merchandise with all original tags attached initiated within 30 days of your order shipping. Please note: items that have been tried on with direct skin contact which show any signs of wear will not be accepted. Signs of wear can include, but are not limited to, unhygienic or deodorant marks, pet hair, missing tags, odor or fragrance. We recommend always wearing your own underwear when first trying on your purchase.\n\nOnce your return is delivered back to us, our team thoroughly inspects all items ensuring they are in new condition. This process can take up to 10 business days from the date your return is delivered back to us. If your return is accepted and you have not initiated an exchange or repurchased using ShopNow, you will receive a notification of your refund or store credit via email.\n\nUnderPure reserves the right to refuse any return that is received worn, damaged, or does not comply with the aforementioned policies. In the instance that a return is received in unacceptable condition, your return will be cancelled and the item will be shipped back to you via FedEx ground shipping.",
+    boldPolicy1: "Full priced merchandise can be returned for exchange, store credit or refund. Sale items may be returned for exchange or store credit only.",
+    finalSaleText: "Items marked 'FINAL SALE' are final sale and are non-returnable.",
+    feeText: "UnderPure charges a $10 return fee on all Domestic U.S. returns for refund. Domestic U.S. returns for store credit, exchange, or ShopNow purchases are free.\n\nInternational returns incur a return fee the equivalent of $20 USD in one's local currency. International returns are not eligible for size exchange or store credit at this time.",
+    outsideReturnsText: "Returns made outside of our returns systems cannot be processed.",
+    noStoreReturnsText: "We are not able to accept web returns in stores.",
+    buttonText: "INITIATE RETURN",
+    buttonLink: "#",
+    boutiqueReturnsHeading: "BOUTIQUE RETURNS",
+    boutiqueReturnsText: "Unworn merchandise in sellable condition with all tags attached will be considered for exchange, store credit or refund within 14 days of purchase.\n\nAll underwear, bodysuits, costumes & accessories are final sale.",
+    euWithdrawalHeading: "EU/EFTA RIGHT OF WITHDRAWAL",
+    euWithdrawalText: "If you are a consumer residing in the European Union, you have the right to withdraw from your purchase contract within 14 days without giving any reason. The withdrawal period expires 14 days after the day on which you, or a third party indicated by you (other than the carrier), acquires physical possession of the goods. To exercise your right of withdrawal, you must inform us of your decision to withdraw from the contract by an unequivocal statement (for example, by email). You may use the model withdrawal form below, but it is not mandatory.\n\nPlease send withdrawal requests to: underpure18@gmail.com\n\nIf you withdraw from this contract, we will reimburse all payments received from you, including standard delivery costs, without undue delay and in any event no later than 14 days from the day on which we are informed of your decision to withdraw from the contract. We may withhold reimbursement until we have received the goods back.\n\nYou must send back the goods without undue delay and in any event no later than 14 days from the day on which you communicate your withdrawal from this contract to us.",
+    withdrawalLinkText: "Submit Withdrawal Here",
+    withdrawalLinkUrl: "#",
+    withdrawalFormLink: "#",
+    withdrawalFormNotePrefix: "EU Model Withdrawal Form can be accessed at this",
+    withdrawalFormLinkText: "link",
+    withdrawalFormNoteSuffix: "and can be completed and returned to us only if you wish to withdraw from the contract."
+  }
+};

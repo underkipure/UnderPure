@@ -1,0 +1,12 @@
+export { default } from "./Footer";
+export { default as Footer } from "./Footer";
+export { default as CustomArrow } from "./components/CustomArrow";
+export { default as FooterNewsletterBanner } from "./components/FooterNewsletterBanner";
+export { default as FooterMobileAccordions } from "./components/FooterMobileAccordions";
+export { default as FooterBoutiquesColumn } from "./components/FooterBoutiquesColumn";
+export { default as FooterContactColumn } from "./components/FooterContactColumn";
+export { default as FooterCompanyInfoColumn } from "./components/FooterCompanyInfoColumn";
+export { default as FooterGetHelpColumn } from "./components/FooterGetHelpColumn";
+export { default as FooterBigLogo } from "./components/FooterBigLogo";
+export { default as FooterBottomBar } from "./components/FooterBottomBar";
+export * from "./components/FooterSocialIcons";

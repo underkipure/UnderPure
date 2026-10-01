@@ -1,0 +1,78 @@
+Options -MultiViews
+
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Force WWW (OneSignal aur consistency ke liye zaroori hai)
+  RewriteCond %{HTTP_HOST} ^underpure\.com [NC]
+  RewriteRule ^(.*)$ https://www.underpure.com/$1 [L,R=301]
+
+  # Backend API passthrough (agar backend "backend" folder me ho)
+  RewriteCond %{REQUEST_URI} ^/backend [NC]
+  RewriteRule ^ - [L]
+
+  # Redirect legacy /home, /home.html, /index.html to root /
+  RewriteCond %{THE_REQUEST} \s/+(home|home\.html|index\.html)\s [NC]
+  RewriteRule ^ / [R=301,L]
+
+  # Existing files ya folders ko normally serve karo
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # Baki sab SPA requests (jaise /admin, /product/123) ko absolute /index.php pe bhej do
+  # Leading slash (/) zaroori hai taake subdirectories me relative path problem na ho
+  RewriteRule ^(.*)$ /index.php [QSA,L]
+</IfModule>
+
+# Fallback error handling for LiteSpeed / Apache SPA routing
+ErrorDocument 404 /index.php
+
+# LiteSpeed Server Optimization for Hostinger (Exclude index files from cache)
+<IfModule Litespeed>
+  CacheEnable public
+  RewriteEngine On
+  RewriteCond %{REQUEST_METHOD} ^(HEAD|GET)$
+  RewriteCond %{REQUEST_URI} !^/(backend|admin|index\.php|index\.html)
+  RewriteRule .* - [E=Cache-Control:max-age=3600]
+</IfModule>
+
+# Gzip / Deflate Compression for Performance
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/json application/javascript text/javascript image/svg+xml font/woff2
+</IfModule>
+
+# Browser Caching & Long-term Asset Cache
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Prevent caching of index entry points so users always get fresh JS asset URLs
+  <FilesMatch "^(index\.html|index\.php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  # Cache hashed static assets for 1 year
+  <FilesMatch "\.(ico|jpe?g|png|gif|webp|svg|woff2?|css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,33 @@
+# Underpure Full Site Specification
+
+> Extended documentation, catalog information, and AI browsing guidelines for Underpure (https://www.underpure.com/).
+
+## Overview
+Underpure is a premier luxury fashion brand specializing in luxury women's wear, handcrafted designer apparel, intimates, and luxury pret. 
+
+## Technical Architecture & Navigation
+- Frontend: React SPA built with Vite, TailwindCSS, Lucide icons, and React Router.
+- Routing structure:
+  - `/` - Home Page
+  - `/collections/:category` - Category Product Listings (e.g. `/collections/new-arrivals`, `/collections/bras`, `/collections/clothing`, `/collections/sale`, `/collections/search?q=query`)
+  - `/product/:slug_or_id` - Detailed Product View with size selection, color swatches, gallery, and review sections.
+  - `/cart` & Slide-out Bag - Cart management and item quantity controls.
+  - `/checkout` - Order checkout form.
+  - `/account` - Customer account management.
+  - `/bra-size` - Interactive Bra Size Calculator tool.
+  - `/size-guide` - Comprehensive clothing and bra sizing charts.
+  - `/loyalty-program` - Rewards and points policy details.
+  - `/contact-us`, `/faqs`, `/returns` - Customer support services.
+
+## Product Catalog Guidelines for AI Agents
+When reading or parsing product pages:
+1. Product Titles are displayed prominently in H1/H2 tags or product headings.
+2. Prices are displayed in Pakistani Rupees (PKR / Rs). Original prices are crossed out when items are on sale.
+3. Available sizes range from XS to XXL depending on product inventory.
+4. Product images are served via high-resolution CDN links with fallback optimization.
+
+## Store Policies Summary
+- Shipping: Free delivery across Pakistan on orders above PKR 2,500.
+- Dispatch Time: Orders are processed within 24-48 business hours.
+- Returns & Exchanges: Returns accepted within 7 days of delivery for unworn items with tags intact. Handcrafted intimates may have hygienic restrictions specified in the return policy.
+- Customer Care Contact: Email underpure18@gmail.com | Phone +923228483029.
